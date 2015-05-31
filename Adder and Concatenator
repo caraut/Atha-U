@@ -1,0 +1,25 @@
+#Define the Multiplication Function
+def multiplication(intA, intB):#defining the 'multiplication' function and the associated variables
+	return intA * intB#defining what the multiplication function actually does and what it should return
+	
+#Define the String Addition/Combiner Function	
+def stringaddition(string1, string2):#defining the 'string addition' function and the associated variables
+	return string1 + string2 #defining what the string addition function actually does and what it should return
+
+
+print("Craig Rautenstrauch's Basic Input Combiner and Integer Multiplier Program")#printing the programs name/header
+print("""Program author: Craig Rautenstrauch 
+STUDENT ID#: 3210931
+Program 2 - Using Input""") #Printing the mandatory Athabasca University header information
+
+
+string1 = str(raw_input("Please Enter String 1:"))#user defining what the variable 'string1' is
+
+string2 = str(raw_input("Please Enter String 2:"))#user defining what the variable 'string2' is
+
+intA = int(raw_input("Please Enter Integer A:"))#user defining what the variable 'int1'(integer) is
+
+intB = int(raw_input("Please Enter Integer B:"))#user defining what the variable 'int2'(integer) is
+
+print stringaddition(string1, string2) #print the results from the string Addition/Combiner function 
+print multiplication(intA, intB)#print the results from the multiplication function

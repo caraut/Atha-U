@@ -1,0 +1,83 @@
+#Defining the various mathematical functions
+
+#Defining 1.Addition
+def addition(int1,int2): #Defining the 'addition' function with the two variables
+	return int1 + int2 #defining what the addition function actually does, and what is should return
+
+#Defining 2.Subtraction
+
+def subtraction(int1, int2): # defining the 'subtraction' function with the two variables
+	return int1 - int2 #defining what the subtraction function actually does and what it should return
+
+#Defining 3.Multiplication
+
+def multiplication(int1, int2):#defining the "multiplication function with the two variables
+	return int1 * int2 #defining what the multiplication function actually does and what it should return 
+
+#Defining 4.Division
+
+def division(int1, int2): #defining the 'division' function along with the two variables
+	return int1 / int2 #defining what the division function actually does and what it should return
+		
+#Defining 5.Exponents
+
+def exponents(int1, int2): #defining the 'exponents' function with the two variables
+	return int1 ** int2 #defining what the exponents function actually does and what it should return for an answer
+	
+#Defining 6.Remainders
+
+def remainders(int1, int2): #defining the 'remainders' function with the two variables
+	return int1 % int2 #defining what the remainders function actually does
+	
+	
+#Beginning of the programs input
+
+print("Caraut's Basic Math Program") #printing the program header
+print("""Program author: Caraut
+STUDENT ID#: 
+Program 1 - MATH FUNCTIONS""") #Printing the mandatory Athabasca University header information
+
+
+print("What would you like to do?") #printing program option selector header
+print("1. Addition") #printing program option 1
+print("2. Subtraction") #printing program option 2
+print("3. Multiplication")#printing program option 3
+print("4. Division") #printing program option 4
+print("5. Exponents") #printing program option 5
+print("6. Remainders") #printing program option 6
+
+#Selection of mathematical operation
+operation = input("Enter number of what you would like to do:") #user sets the program operation mode
+
+#Defining the values for the mathematical operations
+print("In Division and Remainder 1st number is the numerator, 2nd is Denominator") #printing information on the first integer usage
+print("in Exponents the 1st number is the base, the 2nd is the Power") #printing information on the second integer usage
+int1 = int(raw_input("Please enter your first number: ")) #user input first integer
+int2 = int(raw_input("Please enter your second number: ")) #user input second integer
+
+if operation == 1: #if user selected option 1 from program options
+        print("The sum of the numbers is,") #print the mathematical statement
+        print addition(int1,int2) #print the answer after the function 'addition' is carried out on int1 and int2
+
+elif operation == 2:#if user selected option 2 from program options
+	print("The difference of the numbers is,")#print the mathematical statement
+	print subtraction(int1,int2)#print the answer after the function 'subtraction' is carried out on int1 and int2
+	
+elif operation == 3:#if user selected option 3 from program options
+	print("The product of the numbers is,")#print the mathematical statement
+	print multiplication(int1,int2)#print the answer after the function 'multiplication' is carried out on int1 and int2
+	
+elif operation == 4:#if user selected option 4 from program options
+	print("The quotient of the numbers is,")#print the mathematical statement
+	print division(int1,int2)#print the answer after the function 'division' is carried out on int1 and int2
+	
+elif operation == 5:#if user selected option 5 from program options
+	print("The exponential value of the numbers is,")#print the mathematical statement
+	print exponents(int1,int2)#print the answer after the function 'exponents' is carried out on int1 and int2
+	
+elif operation == 6:#if user selected option 5 from program options
+	print("The remainder, after division, of the numbers is,")#print the mathematical statement
+	print remainders(int1,int2)#print the answer after the function 'remainders' is carried out on int1 and int2
+	
+else:#if user selected anything else from program options
+	print("Invalid Input")#prints that the used did not enter a valid input
